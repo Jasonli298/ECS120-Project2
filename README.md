@@ -1,7 +1,7 @@
 # ECS120 Project 2
 I attempted to write a Python program that implements an algorithm that polyreduces *Clique* problem to the *Node Cover* problem. I'm using the techique given by Richard Karp in the textbook.
 
-The converted program takes in 3 parameters: `graph`, `N `, `k`, which are the input graph represented in a single ASCII string, the number of nodes in the graph, and the number *K* in the *Clique* problem, which finds if there's a clique with size *K* inside the graph.
+The converted program takes in 3 parameters: `graph`, `N `, `k`, which are the input graph represented in a single ASCII string, the number of nodes in the graph, and the number *K* in the *Clique* problem, which finds if there's a clique with size *K* inside the graph. Note: the input graph string needs to be in `"a, b;c, d"` format, with each edge represented using two nodes and seperated by comma, and each edge seperated by colon.
 
 First I calculated the number `l = N - k`, which is latered used to solve the problem using *Node Cover*. Then I splitted the input graph as a string into a list of tuples that consists of 2 nodes, which represents an edge connecting the 2 nodes.
 ```python
